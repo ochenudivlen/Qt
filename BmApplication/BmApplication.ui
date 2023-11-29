@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>BmApplicationClass</class>
+ <widget class="QMainWindow" name="BmApplicationClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>763</width>
+    <height>453</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>BmApplication</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="0" colspan="3">
+     <widget class="QTableWidget" name="twFlightTasks">
+      <column>
+       <property name="text">
+        <string>Точка старта</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Точка падения</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Время старта</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>Угол бросания</string>
+       </property>
+      </column>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QPushButton" name="pbAdd">
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QPushButton" name="pbDelete">
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="2">
+     <widget class="QPushButton" name="pbCalc">
+      <property name="text">
+       <string>Посчитать</string>
+      </property>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>763</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="BmApplication.qrc"/>
+ </resources>
+ <connections>
+  <connection>
+   <sender>pbAdd</sender>
+   <signal>released()</signal>
+   <receiver>BmApplicationClass</receiver>
+   <slot>onAdd()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>151</x>
+     <y>416</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>161</x>
+     <y>-13</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbDelete</sender>
+   <signal>released()</signal>
+   <receiver>BmApplicationClass</receiver>
+   <slot>onDelete()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>318</x>
+     <y>410</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>309</x>
+     <y>-14</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pbCalc</sender>
+   <signal>released()</signal>
+   <receiver>BmApplicationClass</receiver>
+   <slot>onCalculate()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>625</x>
+     <y>417</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>608</x>
+     <y>-10</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>onAdd()</slot>
+  <slot>onDelete()</slot>
+  <slot>onCalculate()</slot>
+ </slots>
+</ui>
