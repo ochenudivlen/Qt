@@ -15,8 +15,73 @@
   </property>
   <widget class="QWidget" name="centralWidget">
    <layout class="QGridLayout" name="gridLayout">
-    <item row="0" column="0" colspan="3">
+    <item row="2" column="0">
+     <widget class="QPushButton" name="pbAdd">
+      <property name="text">
+       <string>Добавить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="1">
+     <widget class="QPushButton" name="pbDelete">
+      <property name="text">
+       <string>Удалить</string>
+      </property>
+     </widget>
+    </item>
+    <item row="2" column="2">
+     <widget class="QPushButton" name="pbCalc">
+      <property name="text">
+       <string>Посчитать</string>
+      </property>
+     </widget>
+    </item>
+    <item row="1" column="0" colspan="3" alignment="Qt::AlignLeft">
      <widget class="QTableWidget" name="twFlightTasks">
+      <property name="minimumSize">
+       <size>
+        <width>1000</width>
+        <height>351</height>
+       </size>
+      </property>
+      <attribute name="horizontalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderCascadingSectionResizes">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="horizontalHeaderMinimumSectionSize">
+       <number>100</number>
+      </attribute>
+      <attribute name="horizontalHeaderDefaultSectionSize">
+       <number>180</number>
+      </attribute>
+      <attribute name="horizontalHeaderHighlightSections">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderShowSortIndicator" stdset="0">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="horizontalHeaderStretchLastSection">
+       <bool>false</bool>
+      </attribute>
+      <attribute name="verticalHeaderVisible">
+       <bool>true</bool>
+      </attribute>
+      <attribute name="verticalHeaderCascadingSectionResizes">
+       <bool>true</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>Id полётного задания</string>
+       </property>
+       <property name="font">
+        <font>
+         <family>MS Shell Dlg 2</family>
+         <pointsize>8</pointsize>
+        </font>
+       </property>
+      </column>
       <column>
        <property name="text">
         <string>Точка старта</string>
@@ -39,27 +104,6 @@
       </column>
      </widget>
     </item>
-    <item row="1" column="0">
-     <widget class="QPushButton" name="pbAdd">
-      <property name="text">
-       <string>Добавить</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="1">
-     <widget class="QPushButton" name="pbDelete">
-      <property name="text">
-       <string>Удалить</string>
-      </property>
-     </widget>
-    </item>
-    <item row="1" column="2">
-     <widget class="QPushButton" name="pbCalc">
-      <property name="text">
-       <string>Посчитать</string>
-      </property>
-     </widget>
-    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -68,7 +112,7 @@
      <x>0</x>
      <y>0</y>
      <width>763</width>
-     <height>18</height>
+     <height>22</height>
     </rect>
    </property>
   </widget>
